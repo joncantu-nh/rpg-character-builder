@@ -1,0 +1,83 @@
+:host {
+  display: block;
+}
+
+.roller-page {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.roller-card {
+  width: min(100%, 560px);
+  padding: 2.5rem;
+  border: 1px solid #3d4653;
+  border-radius: 16px;
+  text-align: center;
+  background: #1a2029;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c99b45;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.description {
+  margin: 0.75rem auto 2rem;
+  color: #b9c0c9;
+}
+
+.die-display {
+  display: grid;
+  place-items: center;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2rem;
+  border: 2px solid #c99b45;
+  border-radius: 18px;
+  background: #10151c;
+}
+
+.roll-value {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.roll-placeholder {
+  color: #737c87;
+}
+
+.roll-button {
+  padding: 0.8rem 1.5rem;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.roll-button:hover {
+  transform: translateY(-1px);
+}
+
+.range-help {
+  margin: 1.5rem 0 0;
+  font-size: 0.9rem;
+  color: #9fa8b3;
+}
+
+@media (max-width: 600px) {
+  .roller-card {
+    padding: 2rem 1.25rem;
+  }
+}

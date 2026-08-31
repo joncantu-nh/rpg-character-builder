@@ -1,0 +1,50 @@
+<section
+  class="roller-page"
+  aria-labelledby="roller-title">
+
+  <div class="roller-card">
+
+    <p class="eyebrow">
+      RPG Character Builder
+    </p>
+
+    <h2 id="roller-title">
+      Ability Score Roller
+    </h2>
+
+    <p class="description">
+      Roll a d{{ sides }} to generate an ability score.
+    </p>
+
+    <div class="die-display" aria-live="polite">
+      @if (result !== null) {
+        <span
+          class="roll-value"
+          data-testid="roll-result">
+          {{ result }}
+        </span>
+      } @else {
+        <span
+          class="roll-value roll-placeholder"
+          data-testid="roll-result">
+          —
+        </span>
+      }
+    </div>
+
+    <button
+      type="button"
+      class="roll-button"
+      data-testid="roll-button"
+      (click)="rollAbility()">
+      Roll ability
+    </button>
+
+    <p class="range-help">
+      The result will always be between
+      1 and {{ sides }}.
+    </p>
+
+  </div>
+
+</section>
