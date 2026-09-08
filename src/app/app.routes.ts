@@ -4,6 +4,7 @@ import { ClassesComponent } from './classes/classes.component';
 import { ClassDetailComponent } from './class-detail/class-detail.component';
 import { AboutComponent } from './about/about.component';
 import { AbilityRollerComponent } from './ability-roller/ability-roller.component';
+import { CharacterBuilderComponent } from './character-builder/character-builder.component';
 
 export const routes: Routes = [
   {
@@ -28,5 +29,9 @@ export const routes: Routes = [
   {
     path: 'roll/:sides',
     component: AbilityRollerComponent,
+  },
+  {
+    path: 'builder',
+    component: CharacterBuilderComponent,
   },
 ];
