@@ -7,6 +7,7 @@ import { AbilityRollerComponent } from './ability-roller/ability-roller.componen
 import { CharacterBuilderComponent } from './character-builder/character-builder.component';
 import { SigninComponent } from './signin/signin.component';
 import { authGuard } from './auth.guard';
+import { CharacterProfileComponent } from './character-profile/character-profile.component';
 
 export const routes: Routes = [
   {
@@ -36,6 +37,10 @@ export const routes: Routes = [
     path: 'builder',
     component: CharacterBuilderComponent,
     canActivate: [authGuard],
+  },
+  {
+    path: 'profile',
+    component: CharacterProfileComponent,
   },
   {
     path: 'signin',

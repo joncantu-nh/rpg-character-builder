@@ -2,12 +2,16 @@ import { Component } from '@angular/core';
 import {
   RouterLink,
   RouterLinkActive,
-  RouterOutlet
+  RouterOutlet,
 } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterLink, RouterLinkActive, RouterOutlet],
+  imports: [
+    RouterLink,
+    RouterLinkActive,
+    RouterOutlet,
+  ],
   template: `
     <header>
       <h1>RPG Character Builder</h1>
@@ -16,19 +20,36 @@ import {
         <a
           routerLink="/"
           routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }">
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
           Home
         </a>
 
         <a
           routerLink="/classes"
-          routerLinkActive="active">
+          routerLinkActive="active"
+        >
           Classes
         </a>
 
         <a
+          routerLink="/builder"
+          routerLinkActive="active"
+        >
+          Builder
+        </a>
+
+        <a
+          routerLink="/profile"
+          routerLinkActive="active"
+        >
+          Profile
+        </a>
+
+        <a
           routerLink="/about"
-          routerLinkActive="active">
+          routerLinkActive="active"
+        >
           About
         </a>
       </nav>
@@ -41,7 +62,6 @@ import {
     <footer>
       <p>WEB 425 · RPG Character Builder</p>
     </footer>
-  `
+  `,
 })
-
 export class AppComponent {}
